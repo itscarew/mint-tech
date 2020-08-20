@@ -29,7 +29,7 @@ Then, run the web app in development mode.
 ```bash
 $ yarn start
 
-[0] Serving "/Users/Yung Pablo/Documents/projects/mint-tech-test" at http://192.168.8.100:3000
+[0] Serving "/Users/hp/Documents/projects/mint-tech-test" at http://192.168.8.100:3000
 
 [0] Ready for changes
 ```
