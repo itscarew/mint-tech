@@ -1,0 +1,148 @@
+.biograph {
+  position: relative;
+
+  &-items {
+    display: flex;
+    align-items: flex-start;
+    background: $color-light;
+    padding: 1rem 2rem;
+    margin: 0rem 1rem;
+
+    .graph {
+      flex-basis: 65%;
+
+      .date {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 0;
+
+        & span {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+
+        div {
+          display: flex;
+          align-items: center;
+
+          .dropdown-date {
+            margin-right: 5rem;
+            & select {
+              border: 1px solid $color-gray-light;
+              border-radius: 5px;
+              padding: 0.7rem 2rem;
+
+              option:hover {
+                display: none;
+              }
+            }
+          }
+
+          .arrows {
+            display: flex;
+            align-items: center;
+
+            & div {
+              border: 1px solid $color-gray-light;
+              border-radius: 5px;
+              margin: 0 0.5rem;
+              padding: 0.1rem 0.5rem;
+              cursor: pointer;
+              background: linear-gradient(
+                to bottom,
+                rgba($color-gray-light, 0.1),
+                rgba($color-gray-light, 0.4)
+              );
+            }
+          }
+        }
+      }
+
+      .month {
+        display: flex;
+        align-items: flex-start;
+
+        & > div {
+          flex-basis: 16.6%;
+          text-align: center;
+          font-size: 1.2rem;
+          font-weight: bold;
+          height: 18rem;
+          color: $color-dark;
+
+          &:not(:last-child) {
+            border-right: 1px solid #cfe8fb;
+          }
+        }
+      }
+
+      .gradient {
+        width: 100%;
+        margin-top: -10rem;
+
+        & img {
+          width: 100%;
+        }
+      }
+    }
+
+    .order-payments {
+      flex-basis: 35%;
+      position: relative;
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 2rem;
+        font-size: 1.3rem;
+
+        & div {
+          margin-bottom: 2rem;
+        }
+
+        .item {
+          .title {
+            color: $color-dark;
+          }
+          .meter {
+            position: relative;
+            background: $color-yellow;
+            height: 0.4rem;
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 75%;
+              height: 100%;
+              background: $color-green;
+            }
+          }
+          & > * {
+            margin-bottom: 0.5rem;
+
+            .pending {
+              color: $color-yellow;
+            }
+
+            .reconcile {
+              color: $color-green;
+            }
+            .total {
+              color: $color-blue;
+            }
+          }
+          display: flex;
+          flex-direction: column;
+
+          & span {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

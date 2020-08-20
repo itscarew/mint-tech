@@ -1,0 +1,28 @@
+.footer {
+  position: relative;
+
+  &-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 1rem;
+    color: $color-dark;
+
+    .controller {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      & span {
+        border: 1px solid $color-gray-light;
+        padding: 0.5rem 1rem;
+      }
+      .blue {
+        color: $color-light;
+        background: $color-blue;
+      }
+      .gray {
+        color: #7f8fa4;
+      }
+    }
+  }
+}

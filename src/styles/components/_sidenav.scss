@@ -1,0 +1,61 @@
+.sidenav {
+  position: relative;
+
+  &-items {
+    font-size: 1rem;
+    & button {
+      display: block;
+      width: 70%;
+      margin: 2.5rem auto;
+      background: $color-green;
+      color: $color-light;
+      border-radius: 30px;
+      padding: 0.8rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    & > span {
+      color: $color-gray;
+      display: block;
+      margin: 1.5rem 4rem;
+    }
+
+    & > ul {
+      li {
+        position: relative;
+        margin: 0.5rem 0;
+        a {
+          display: flex;
+          align-items: center;
+          color: $color-gray;
+          padding: 1rem 4rem;
+
+          & svg {
+            margin-right: 1rem;
+          }
+        }
+      }
+
+      .styled {
+        a {
+          background: rgba($color-blue, 0.1);
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1%;
+            height: 100%;
+            background: $color-blue;
+            z-index: -1;
+          }
+        }
+      }
+
+      .merchant-profile {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
