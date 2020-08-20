@@ -1,68 +1,68 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Mint Financial Technology
 
-## Available Scripts
+## Front-end Test
 
-In the project directory, you can run:
+Implementating a dashboard view for the fictional Transmonitor web application using Reactjs, JSX, CSS/SCSS.
 
-### `yarn start`
+## Commands
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+After you clone this project, these commands are available in `package.json`.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```bash
+yarn run start # run the app in development mode
+yarn run watch:sass # watches for changes in sass files, converts scss files into CSS and auto-compiles Sass every time changes are made.
+yarn run compress:css # compiles, prefixes and compresses sass files to a single style.css file.
+```
 
-### `yarn test`
+## Playing locally
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+First, you will need to install [NodeJS](https://www.nodejs.org/) or [Yarn](https://www.yarnpkg.com) on your machine.
 
-### `yarn build`
+After installing, navigate to the project root folder and install it's dependencies.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+$ yarn install
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Then, run the web app in development mode.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+$ yarn start
 
-### `yarn eject`
+[0] Serving "/Users/Yung Pablo/Documents/projects/mint-tech-test" at http://192.168.8.100:3000
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[0] Ready for changes
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> Note that the server may start on a different port if :3000 is in use. It might tell you that it will run it in :3001
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Directory structure
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Overview
 
-## Learn More
+### css/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Here is where the styles are compiled to.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### styles/
 
-### Code Splitting
+Sass stylesheets are in this folder.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+#### styles/index.scss
 
-### Analyzing the Bundle Size
+This is the main entry point for all Sass files.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### index.js
 
-### Making a Progressive Web App
+The app's main entry point.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
+## Feedback
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Duplicating DOM elements and populating them with random data causes an unnecessary increase in development time. Though it's not difficult or stressful, it would be better if candidates could dynamically populate the DOM.
 
-### Deployment
+An API or a JSON file that provides data would be ideal.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+It would reduce development time and also give you (the recruiter) more insight to the candidates' technical skills. 
 
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Thank You
